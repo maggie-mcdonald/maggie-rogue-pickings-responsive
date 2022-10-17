@@ -1,0 +1,249 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-size: 1em;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875rem;
+}
+
+h2 {
+	font-size: 1.666rem;
+}
+h3 {
+	font-size: 0.75rem;
+}
+
+p {
+	font-size: 0.875rem;
+	line-height: 21px;
+   
+}
+
+/*The widths are in a percentage!*/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 10px 10px;
+	width: 100%;
+	text-align: center;
+}
+header nav ul {
+	margin: 0 auto;
+	padding-left: 0;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875rem;
+	padding: 10px 10px;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+	
+	
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding: 10px 0px;
+}
+
+
+.section-two h3,
+.section-three h3 {
+	padding: 10px 0px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1rem;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875rem;
+}
+
+
+
+/*  Media Queries  */
+
+@media (min-width: 768px) {
+    /* Tablet styles here */
+	.bottom-section {
+		flex-flow: row wrap;
+		justify-content: space-between;
+        align-items: flex-start;
+		
+	}
+
+	.section-one,
+	 .section-three {
+		flex-basis: 33%;
+
+	}
+
+	.section-two {
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		flex-basis: 33%;
+		box-sizing: border-box;
+		padding-left: 20px;
+		padding-right: 20px;
+		
+		
+	}
+ 
+
+}
+
+ /* Desktop */
+@media (min-width:1200px) {
+    /* Desktop styles here */
+ 
+	header {
+		justify-content: space-between;
+	
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		text-align: left;
+		border-bottom: none;
+	  }
+
+	  header nav {
+		width: 40%;
+		
+	  }
+
+	  header nav ul {
+		display: flex;
+		justify-content: right, space-between;
+		flex-flow: nowrap;
+
+
+	  }
+
+}
