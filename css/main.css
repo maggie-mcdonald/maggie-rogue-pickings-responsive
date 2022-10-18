@@ -29,18 +29,18 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 1.875rem;
+	font-size: 1.875em;
 }
 
 h2 {
-	font-size: 1.666rem;
+	font-size: 1.125em;
 }
 h3 {
-	font-size: 0.75rem;
+	font-size: 0.75em;
 }
 
 p {
-	font-size: 0.875rem;
+	font-size: 0.875em;
 	line-height: 21px;
    
 }
@@ -161,7 +161,7 @@ header nav ul li a{
 }
 
 .address {
-	font-size: 1rem;
+	font-size: 1em;
 	line-height: 24px;
 }
 
